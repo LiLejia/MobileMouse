@@ -7,8 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LJMainViewController.h"
 
-@interface LJAppDelegate : UIResponder <UIApplicationDelegate>
+@interface LJAppDelegate : UIResponder <UIApplicationDelegate>{
+
+    LJMainViewController *mainViewController;
+
+}
 
 @property (strong, nonatomic) UIWindow *window;
 

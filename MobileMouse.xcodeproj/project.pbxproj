@@ -16,6 +16,9 @@
 		BA47D431161579CB00F85EA3 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = BA47D430161579CB00F85EA3 /* Default.png */; };
 		BA47D433161579CB00F85EA3 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BA47D432161579CB00F85EA3 /* Default@2x.png */; };
 		BA47D435161579CB00F85EA3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BA47D434161579CB00F85EA3 /* Default-568h@2x.png */; };
+		BA47D43D161579FB00F85EA3 /* LJMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA47D43C161579FB00F85EA3 /* LJMainViewController.m */; };
+		BA6577F416256BEF006FE304 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6577F316256BEF006FE304 /* CoreMotion.framework */; };
+		BAA2F015162515DD006FE753 /* Server.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA2F014162515DD006FE753 /* Server.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,11 @@
 		BA47D430161579CB00F85EA3 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		BA47D432161579CB00F85EA3 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		BA47D434161579CB00F85EA3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		BA47D43B161579FB00F85EA3 /* LJMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJMainViewController.h; sourceTree = "<group>"; };
+		BA47D43C161579FB00F85EA3 /* LJMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJMainViewController.m; sourceTree = "<group>"; };
+		BA6577F316256BEF006FE304 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		BAA2F013162515DD006FE753 /* Server.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Server.h; sourceTree = "<group>"; };
+		BAA2F014162515DD006FE753 /* Server.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Server.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA6577F416256BEF006FE304 /* CoreMotion.framework in Frameworks */,
 				BA47D41F161579CB00F85EA3 /* UIKit.framework in Frameworks */,
 				BA47D421161579CB00F85EA3 /* Foundation.framework in Frameworks */,
 				BA47D423161579CB00F85EA3 /* CoreGraphics.framework in Frameworks */,
@@ -68,6 +77,7 @@
 		BA47D41D161579CB00F85EA3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BA6577F316256BEF006FE304 /* CoreMotion.framework */,
 				BA47D41E161579CB00F85EA3 /* UIKit.framework */,
 				BA47D420161579CB00F85EA3 /* Foundation.framework */,
 				BA47D422161579CB00F85EA3 /* CoreGraphics.framework */,
@@ -78,8 +88,12 @@
 		BA47D424161579CB00F85EA3 /* MobileMouse */ = {
 			isa = PBXGroup;
 			children = (
+				BA47D43B161579FB00F85EA3 /* LJMainViewController.h */,
+				BA47D43C161579FB00F85EA3 /* LJMainViewController.m */,
 				BA47D42D161579CB00F85EA3 /* LJAppDelegate.h */,
 				BA47D42E161579CB00F85EA3 /* LJAppDelegate.m */,
+				BAA2F013162515DD006FE753 /* Server.h */,
+				BAA2F014162515DD006FE753 /* Server.m */,
 				BA47D425161579CB00F85EA3 /* Supporting Files */,
 			);
 			path = MobileMouse;
@@ -167,6 +181,8 @@
 			files = (
 				BA47D42B161579CB00F85EA3 /* main.m in Sources */,
 				BA47D42F161579CB00F85EA3 /* LJAppDelegate.m in Sources */,
+				BA47D43D161579FB00F85EA3 /* LJMainViewController.m in Sources */,
+				BAA2F015162515DD006FE753 /* Server.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +290,7 @@
 				BA47D43A161579CB00F85EA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
