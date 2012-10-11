@@ -239,8 +239,6 @@ static void SocketAcceptedConnectionCallBack(CFSocketRef socket,
 // if you don't care about the error you can pass NULL
 - (BOOL)sendData:(NSData *)data error:(NSError **)error {
     
-    NSLog(@"the sending data:%@",data);
-    
     BOOL successful = NO;
     if(self.outputStreamHasSpace) {
         // push the whole gob of data onto the output stream
